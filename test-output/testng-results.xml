@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="BVT_TestSuite" duration-ms="6188" started-at="2023-06-26T15:01:36 IST" finished-at="2023-06-26T15:01:42 IST">
+    <groups>
+      <group name="Bvt">
+        <method signature="Users.addNewUser(java.lang.String,java.lang.String,int)[pri:0, instance:com.api.test.users.Users@276438c9]" name="addNewUser" class="com.api.test.users.Users"/>
+        <method signature="Users.getUser(int)[pri:0, instance:com.api.test.users.Users@276438c9]" name="getUser" class="com.api.test.users.Users"/>
+      </group> <!-- Bvt -->
+      <group name="Regression">
+        <method signature="Users.addNewUser(java.lang.String,java.lang.String,int)[pri:0, instance:com.api.test.users.Users@276438c9]" name="addNewUser" class="com.api.test.users.Users"/>
+        <method signature="Users.getUser(int)[pri:0, instance:com.api.test.users.Users@276438c9]" name="getUser" class="com.api.test.users.Users"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test name="BVTSuite" duration-ms="6188" started-at="2023-06-26T15:01:36 IST" finished-at="2023-06-26T15:01:42 IST">
+      <class name="com.api.test.users.Users">
+        <test-method status="PASS" signature="getUser(int)[pri:0, instance:com.api.test.users.Users@276438c9]" name="getUser" duration-ms="6087" started-at="2023-06-26T15:01:36 IST" data-provider="getUsers" finished-at="2023-06-26T15:01:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getUser -->
+        <test-method status="PASS" signature="addNewUser(java.lang.String,java.lang.String,int)[pri:0, instance:com.api.test.users.Users@276438c9]" name="addNewUser" duration-ms="6086" started-at="2023-06-26T15:01:36 IST" data-provider="addUsers" finished-at="2023-06-26T15:01:42 IST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testUser]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[testJob]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[201]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewUser -->
+      </class> <!-- com.api.test.users.Users -->
+    </test> <!-- BVTSuite -->
+  </suite> <!-- BVT_TestSuite -->
+</testng-results>

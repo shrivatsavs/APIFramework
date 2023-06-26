@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [BVT_TestSuite]">
+  <listeners>
+    <listener class-name="com.api.helpers.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="5" name="BVTSuite(failed)" parallel="methods">
+    <groups>
+      <run>
+        <include name="Bvt"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.api.test.users.Users">
+        <methods>
+          <include name="addNewUser" invocation-numbers="0"/>
+          <include name="getUser" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.api.test.users.Users -->
+    </classes>
+  </test> <!-- BVTSuite(failed) -->
+</suite> <!-- Failed suite [BVT_TestSuite] -->
